@@ -31,6 +31,8 @@ header{
     padding: 2vw;
     align-items: center;
 }
+
+
 .active{
     background:linear-gradient(rgb(177, 69, 69),10%,rgb(66, 2, 66)) !important;
     color: white !important;
@@ -47,22 +49,31 @@ h1, footer{
     padding: 1%;
     margin: 0;
     color: white;
+    height:6vw;
 }
 i{
-    margin: 2%
+    margin: 2%;
 }
 .search{
     display: flex;
     margin-left:auto;
-    width: 35%;
+    width: 30%;
     padding: 1% 2%;
 }
-.categoria{
-    padding: 1% 2%;
+.categorias{
+    width: fit-content;
+    padding: 2% 2%;
+
+}
+.categorias label{
+    color: black;
+}
+.categoria input :active{
+    background-color:rgb(66, 2, 66) !important;
 }
 .card{
     flex-direction: column;
-    height: 35vw;
+    height: 37vw;
     width: 22vw;
     background-color: rgba(87, 63, 109, 0.541);
     padding: 0;
@@ -95,21 +106,16 @@ i{
 .card-footer{
     width: 100%;
     margin:auto;
-    height: 10vh;
+    height: 7vw;
     align-items: center;
 }
-#details,#price{
+#price{
     
     color: white;
     font-size: 1.2vw;
     
 }
-#details{
-    box-shadow: 0 2px 0 2px rgba(109, 19, 109, 0.568);
-    border: 1px outset; 
-    text-decoration: none;
-    padding: 1vw 2vw;
-}
+
 h4{
     text-align: center;
 }
@@ -136,7 +142,7 @@ th{
 td{
     background: linear-gradient(rgb(198, 193, 199), 20%, rgb(241, 237, 238));
 }
-input{
+form input{
     border: 1px inset !important;
     height: 4vw;
 }
@@ -167,6 +173,7 @@ label{
 }
 footer{
     margin-top: auto;
+    margin-bottom: 1%;
 }
     
 
@@ -185,7 +192,7 @@ footer{
     }
     .card{
         width: 40vw;
-        height: 55vw;
+        height: 60vw;
         margin: 10% auto;
         padding-top: 3%;
         
@@ -203,10 +210,14 @@ footer{
     .card-text{
         font-size: 2vw;
 }
-    #details, #price{
-        margin-left: 1vw;
-        font-size: 3vw;
+    #btn-details, #price{
+        margin-left: 3vw;
+        font-size: 2vw;
         
+    }
+    #btn-details{
+        font-size: 4vw;
+      
     }
     
 }
@@ -221,47 +232,71 @@ footer{
         width: 60vw;
         height: 40vw;
     }
-    #details, #price{
+    #btn-details, #price{
         margin-left: 10vw;
         font-size: 3vw;
         
     }
+    #btn-details{
+        height: 4vw;
+        width: 6vw;
+        font-size: 2vw;
+    }
+
     .card-title{
         font-size: 5vw;
     }
     .card-text{ 
         font-size: 3vw;
     }
+    
 
 }
 #card-details{
     
     display: flex;
+    padding: 0;
     flex-direction: row;
-    margin: 10% auto;
+    margin: 2% auto;
     width: 70vw;
-    height: 40vw;
+    height: 35vw;
 }
 #card-body{
     
     align-items: center;
 }
 #card-body h5{
-    margin: 15% auto;
-    font-size: 4vw;
+    margin: 10% auto;
+    font-size: 3vw;
 }
-#card-body p{
-    font-size: 1.5vw;
-    
-    
-    
+#card-body li{
+    font-size: 1.2vw;
+    list-style: none;
 }
-#img{
-    background-color: gray;
-    width: 80vw;
+
+    
+    
+    
+
+#img-detail{
+    width: 40vw;
+    margin: 0;
     height: 100%;
-   
-    align-items: center;
+    object-fit: cover;
+    border-radius: 9px 0 0 9px;
    
 }
 
+#cerrar {
+    width:1vw;
+    margin-left:95%;
+}
+#btn-details{
+    box-shadow: 0 2px 0 2px rgba(66, 14, 66, 0.568);
+    background-color: rgb(105, 51, 105);
+    height: 2vw;
+    width: 8vw;
+    border-radius: 8px;
+    font-size: 1.3vw;
+    color:white;
+}
