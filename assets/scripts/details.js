@@ -1,11 +1,25 @@
-  
-  
-  let params = new URLSearchParams(document.location.search)
+let cards =[]
+let params = new URLSearchParams(document.location.search)
   let id = params.get("id")
+function traerDatos(){
+  fetch('https://mindhub-xj03.onrender.com/api/amazing')
+.then(response => response.json())
+.then(datosApi => {
+  cards = datosApi.events
+  mostrarCard(cards,id)
   
-  let profile = (data.events).filter(info=>info._id==id);
+})
+.catch(error => console.log(error.message))
+}
+  
+ traerDatos()
+ 
 
  
+  
+  function mostrarCard(cards,id){
+  let profile = (cards).filter(info=>info._id==id);
+
   const container = document.querySelector('#card-details')
   container.innerHTML = `
           <div> 
@@ -32,4 +46,4 @@ if (profile[0].hasOwnProperty('assistance')){
 }else{
   li.innerHTML = `<li class="card-text">Estimate: ${profile[0].estimate}</li>`
 }
-
+}
