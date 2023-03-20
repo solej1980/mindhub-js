@@ -62,6 +62,9 @@ i{
     width: 30%;
     padding: 1% 2%;
 }
+input[type=search]{
+    font-size: 1.5vw;
+}
 .categorias{
     width: fit-content;
     padding: 2% 2%;
@@ -75,7 +78,7 @@ input[type=checkbox]{
     padding: 0.7vw;
 }
 #container{
-    margin: 1vw;
+    margin: 0 1vw;
 }
 .card{
     flex-direction: column;
@@ -147,7 +150,7 @@ h4{
     background-color: transparent;
 }
 .bi-search{
-    width: 1.8 vw;
+    width: 1.8vw;
 }
 table{
     width: 80%;
@@ -244,9 +247,12 @@ label{
         width: 40vw;
         height: 60vw;
         margin: 10% auto;
-        
-        
     }
+    input[type=search]{
+        font-size: 2vw;
+    }    
+        
+    
     .card-img{
         width: 100%;
         height: 25vw;
@@ -279,14 +285,14 @@ label{
         font-size: 2.5vw;
     }
     #categorias label{
-        font-size: 2.7vw;
+        font-size: 2vw;
     }
     #categorias{
         margin:auto;
         
     }
     input[type=checkbox]{
-        padding: 1.8vw;
+        padding: 1vw;
     }
     
     
@@ -316,8 +322,10 @@ label{
     .card-footer{
         height: 15vw;
     }
-    
-
+    .nav-link{
+        font-size: 2.3vw;
+        
+    }
     .card-title{
         font-size: 5vw;
     }
@@ -331,7 +339,9 @@ label{
         color: black;
         font-size: 2.8vw;
     }
-    
+    input[type=search]{
+        font-size: 3vw;
+    }
     
     .search{
         display: flex;
@@ -341,10 +351,12 @@ label{
         padding: 1% 2%;
         font-size: 3vw;
     }
-    
-    input[type=checkbox]{
-        padding: 2vw;
+    h1{
+        height:auto;
+        font-size: 6vw;
     }
+    
+    
     
 
 }
