@@ -95,7 +95,7 @@ function cargarCard(cards){
                         <small class="text" id="price">Price $${card.price}</small>
                     </div>
                     <div class="col-6">
-                        <input type="button" id="btn-details" onClick="mostrarDetalles('${card._id}')" id="details" value="Details"</input>
+                        <input type="button" id="btn-details" onClick="mostrarDetalles('${card._id}')" value="Details"></input>
                     </div>
                 </div>
             </div>

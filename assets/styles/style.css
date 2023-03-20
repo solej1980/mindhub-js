@@ -27,11 +27,13 @@ header{
 .navbar{
     
     width: max-content;
-    margin-left: 25vw;
+    margin-left: 15vw;
     padding: 2vw;
     align-items: center;
 }
-
+.nav-link{
+    font-size: 1.6vw;
+}
 
 .active{
     background:linear-gradient(rgb(177, 69, 69),10%,rgb(66, 2, 66)) !important;
@@ -47,7 +49,7 @@ h1, footer{
     justify-content: center;
     width: 100%;
     padding: 1%;
-    margin: 0;
+    margin: auto;
     color: white;
     height:6vw;
 }
@@ -65,11 +67,15 @@ i{
     padding: 2% 2%;
 
 }
-.categorias label{
+#categorias label{
     color: black;
+    font-size: 1.6vw;
 }
-.categoria input :active{
-    background-color:rgb(66, 2, 66) !important;
+input[type=checkbox]{
+    padding: 0.7vw;
+}
+#container{
+    margin: 1vw;
 }
 .card{
     flex-direction: column;
@@ -78,8 +84,9 @@ i{
     background-color: rgba(87, 63, 109, 0.541);
     padding: 0;
     margin: 3% auto;
-    box-shadow: 0 5px 5px 0 rgba(5, 1, 5, 0.7);   
+    box-shadow: 5px 5px 5px 0 rgba(116, 108, 116, 0.705);   
     border-radius: 10px;
+    border: 1px;
 }
 .card-title{
     font-size: 2vw;
@@ -116,8 +123,23 @@ i{
     
 }
 
+#cerrar {
+    width:1vw;
+    margin-left:95%;
+}
+#btn-details{
+    box-shadow: 0 2px 0 2px rgba(66, 14, 66, 0.568);
+    background-color: rgb(105, 51, 105);
+    height: 4vw;
+    width: 8vw;
+    border-radius: 8px;
+    font-size: 1.3vw;
+    color:white;
+}
+
 h4{
-    text-align: center;
+    text-align: right;
+    margin-top: 1vw;
 }
 #btn-search{
     border:none;
@@ -171,15 +193,22 @@ label{
     text-align: right;
     color: white;
 }
-footer{
-    margin-top: auto;
-    margin-bottom: 1%;
-}
+
     
 
 .iconos svg{
     height: 2vw;
     width: 2vw;
+    margin-top: 1vw;
+   
+}
+#img-detail{
+    width: 40vw;
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px 0 0 9px;
+   
 }
 
     
@@ -187,18 +216,18 @@ footer{
 @media (max-width: 992px){
     .navbar{
         width: 35vw;
-        
+        margin-left: 25vw;
         flex-direction: row-reverse;
     }
     .card{
         width: 40vw;
         height: 60vw;
         margin: 10% auto;
-        padding-top: 3%;
+        
         
     }
     .card-img{
-        width: 35vw;
+        width: 100%;
         height: 25vw;
     }
     .card-footer{
@@ -210,15 +239,16 @@ footer{
     .card-text{
         font-size: 2vw;
 }
-    #btn-details, #price{
-        margin-left: 3vw;
-        font-size: 2vw;
-        
-    }
-    #btn-details{
-        font-size: 4vw;
-      
-    }
+#btn-details, #price{
+    margin-left: 3vw;
+    font-size: 2.3vw;
+    
+}
+#btn-details{
+    width: 12vw;
+    height: 6vw;
+}
+    
     
 }
 
@@ -229,19 +259,22 @@ footer{
 
     }
     .card-img{
-        width: 60vw;
+        width: 100%;
         height: 40vw;
     }
     #btn-details, #price{
-        margin-left: 10vw;
-        font-size: 3vw;
+        margin-left: 8vw;
+        font-size: 3.3vw;
         
     }
     #btn-details{
-        height: 4vw;
-        width: 6vw;
-        font-size: 2vw;
+        width: 16vw;
+        height: 8vw;
     }
+    .card-footer{
+        height: 15vw;
+    }
+    
 
     .card-title{
         font-size: 5vw;
@@ -249,7 +282,25 @@ footer{
     .card-text{ 
         font-size: 3vw;
     }
+    #categorias{
+        margin: auto;
+    }
+    #categorias label{
+        color: black;
+        font-size: 2.4vw;
+    }
     
+    
+    .search{
+        display: flex;
+        margin:auto;
+        width: 60%;
+        height: 8vw;
+        padding: 1% 2%;
+    }
+    .nav-link{
+        font-size: 3vw;
+    }
 
 }
 #card-details{
@@ -278,25 +329,4 @@ footer{
     
     
 
-#img-detail{
-    width: 40vw;
-    margin: 0;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 9px 0 0 9px;
-   
-}
 
-#cerrar {
-    width:1vw;
-    margin-left:95%;
-}
-#btn-details{
-    box-shadow: 0 2px 0 2px rgba(66, 14, 66, 0.568);
-    background-color: rgb(105, 51, 105);
-    height: 2vw;
-    width: 8vw;
-    border-radius: 8px;
-    font-size: 1.3vw;
-    color:white;
-}
