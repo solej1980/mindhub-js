@@ -147,7 +147,7 @@ h4{
     background-color: transparent;
 }
 .bi-search{
-    width: 1.5vw;
+    width: 1.8 vw;
 }
 table{
     width: 80%;
@@ -211,7 +211,28 @@ label{
    
 }
 
+#card-details{
     
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    margin: 2% auto;
+    width: 80vw;
+    height: 45vw;
+    
+}
+#card-body{
+    
+    align-items: center;
+}
+#card-body h5{
+    margin: 10% auto;
+    font-size: 4vw;
+}
+#card-body li{
+    font-size: 1.8vw;
+    list-style: none;
+}
 
 @media (max-width: 992px){
     .navbar{
@@ -238,21 +259,41 @@ label{
     }
     .card-text{
         font-size: 2vw;
-}
-#btn-details, #price{
-    margin-left: 3vw;
-    font-size: 2.3vw;
+    }
+    #btn-details, #price{
+        margin-left: 3vw;
+        font-size: 2.3vw;
     
-}
-#btn-details{
-    width: 12vw;
-    height: 6vw;
-}
+    }
+    #btn-details{
+        width: 12vw;
+        height: 6vw;
+    }
+    
+    .search{
+        display: flex;
+        margin:auto;
+        width: 60%;
+        height: 8vw;
+        padding: 1% 2%;
+        font-size: 2.5vw;
+    }
+    #categorias label{
+        font-size: 2.7vw;
+    }
+    #categorias{
+        margin:auto;
+        
+    }
+    input[type=checkbox]{
+        padding: 1.8vw;
+    }
     
     
 }
 
 @media (max-width:450px){
+    
     .card{
         width: 70vw;
         height: 84vw;
@@ -267,6 +308,7 @@ label{
         font-size: 3.3vw;
         
     }
+    
     #btn-details{
         width: 16vw;
         height: 8vw;
@@ -287,7 +329,7 @@ label{
     }
     #categorias label{
         color: black;
-        font-size: 2.4vw;
+        font-size: 2.8vw;
     }
     
     
@@ -297,33 +339,16 @@ label{
         width: 60%;
         height: 8vw;
         padding: 1% 2%;
-    }
-    .nav-link{
         font-size: 3vw;
     }
+    
+    input[type=checkbox]{
+        padding: 2vw;
+    }
+    
 
 }
-#card-details{
-    
-    display: flex;
-    padding: 0;
-    flex-direction: row;
-    margin: 2% auto;
-    width: 70vw;
-    height: 35vw;
-}
-#card-body{
-    
-    align-items: center;
-}
-#card-body h5{
-    margin: 10% auto;
-    font-size: 3vw;
-}
-#card-body li{
-    font-size: 1.2vw;
-    list-style: none;
-}
+
 
     
     
