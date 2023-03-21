@@ -151,19 +151,22 @@ h4{
     width: 1.8vw;
 }
 table{
-    width: 80%;
+    width: 90%;
     margin: 10% auto;
 }
 tr, td, th{
     border: 1px solid;
     padding:1%; 
-    height: 3vw; 
+    height: 3vw;
+    
 }
 th{
     background: linear-gradient(rgb(84, 17, 90), 20%, rgb(146, 139, 140));
+    font-size:1.5vw;
 }
 td{
     background: linear-gradient(rgb(198, 193, 199), 20%, rgb(241, 237, 238));
+    font-size:1.3vw;
 }
 form input{
     border: 1px inset !important;
@@ -369,6 +372,12 @@ label{
     }
     form label, form input, textarea{
         font-size: 2.6vw !important;
+    }
+    th{
+        font-size: 2.6vw;
+    }
+    td{
+        font-size: 2.5vw;
     }
     
     
